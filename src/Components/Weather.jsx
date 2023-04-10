@@ -55,7 +55,7 @@ const Weather = () => {
             <span>{country}</span>{" "}
           </h3>
 
-          <p className="temperature">{Math.round(temp)}°C</p>
+          <p className="temperature">{Math.round(temp -49)}°C</p>
           <p className="wheather-state">{weatherState}</p>
         </div>
         <div className="bottom info">
