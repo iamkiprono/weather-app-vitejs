@@ -23,7 +23,7 @@ const Weather = () => {
       setLoading(false);
 
       setAccessedCity(data.name);
-      setTemp(data.main.temp);
+      setTemp(data.main.temp - 49);
       setWeatherState(data.weather[0].main);
       setCountry(data.sys.country);
     } catch (error) {
@@ -55,7 +55,7 @@ const Weather = () => {
             <span>{country}</span>{" "}
           </h3>
 
-          <p className="temperature">{Math.round(temp -49)}°C</p>
+          <p className="temperature">{Math.round(temp )}°C</p>
           <p className="wheather-state">{weatherState}</p>
         </div>
         <div className="bottom info">
