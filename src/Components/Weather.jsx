@@ -4,6 +4,9 @@ import Sunny from "./Sunny";
 import { FaSearch } from "react-icons/fa";
 
 const Weather = () => {
+
+
+  
   const [city, setCity] = useState("Elburgon");
 
   const [accessedCity, setAccessedCity] = useState("");
@@ -23,7 +26,7 @@ const Weather = () => {
       setLoading(false);
 
       setAccessedCity(data.name);
-      setTemp(data.main.temp - 49);
+      setTemp(data.main.temp);
       setWeatherState(data.weather[0].main);
       setCountry(data.sys.country);
     } catch (error) {

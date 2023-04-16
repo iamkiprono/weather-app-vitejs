@@ -38,6 +38,7 @@
   justify-content: space-around;
 }
 
+
 .search-wrapper {
   color: black;
   margin-top: 30px;
@@ -51,9 +52,8 @@
 .search-wrapper input {
   border-radius: 20px;
   border: none;
-  
 }
-.search-wrapper input:focus{
+.search-wrapper input:focus {
   border: none;
   outline: none;
 }
